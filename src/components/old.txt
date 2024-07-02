@@ -1,0 +1,70 @@
+import React from 'react';
+import './index.css';
+import Header from './header';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+const Contacts = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Form submission logic here
+    console.log('Form submitted');
+  };
+
+  return (
+    <>
+      <Header name="Recipe Finder" />
+      <div className="contact">
+        <div className="form-box login">
+          <form onSubmit={handleSubmit}>
+            <h2>CONTACT US</h2>
+            <div className="input-box">
+              <span className="icon">
+                <FontAwesomeIcon icon={faUser} />
+              </span>
+              <input type="text" name="name" required />
+              <label>Name</label>
+            </div>
+            <div className="input-box">
+              <span className="icon">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </span>
+              <input type="email" name="email" required />
+              <label>Email</label>
+            </div>
+            <div className="textarea-box">
+              <label className="typeYourMessage">Type your message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div className="address">
+        <div className="text-box">
+          <span className="icon"></span>
+          <div className="text">
+            <label>Address</label>
+            <p>IITJ Karwar, Jodhpur - 342307, Rajasthan</p>
+          </div>
+        </div>
+        <div className="text-box">
+          <span className="icon"></span>
+          <div className="text">
+            <label>Phone</label>
+            <p>507-475-6094</p>
+          </div>
+        </div>
+        <div className="text-box">
+          <span className="icon"></span>
+          <div className="text">
+            <label>Email</label>
+            <p>abhikashyap4563@gmail.com b22cs001@iitj.ac.in</p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Contacts;

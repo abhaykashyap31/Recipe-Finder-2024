@@ -1,0 +1,43 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+    margin-top: 20px;
+  
+    p {
+      margin: 0;
+      color: #6c757d;
+    }
+  
+    nav {
+      margin-top: 10px;
+  
+      a {
+        color: #007bff;
+        text-decoration: none;
+        margin: 0 10px;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    .submit-review-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
