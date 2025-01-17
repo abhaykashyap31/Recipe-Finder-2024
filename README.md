@@ -3,9 +3,6 @@
 ## Overview
 RecipeFinder is a web application designed to help users discover recipes based on the ingredients they have. Built with React.js, styled using TailwindCSS, and powered by the Edamam API, the system efficiently handles over 10,000 API requests to deliver a seamless user experience.
 
-### Mentor
-Dr. Romi Banerjee
-
 ## Features
 - **Ingredient-based Search**: Enter ingredients you have on hand to find matching recipes.
 - **Efficient API Utilization**: Handles a high volume of API requests efficiently, ensuring a responsive user experience.
